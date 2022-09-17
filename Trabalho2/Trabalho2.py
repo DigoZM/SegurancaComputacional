@@ -1,8 +1,11 @@
-import lib.RSAKey as RSA
+import lib.Chave as RSA
 
 
 def main():
-  chaves = RSA.gerarRSA(1, 1024)
+  chaves = RSA.gerar_chave_RSA(1024)
+  print("Chaves: ")
+  print("Publica: ", chaves[0])
+  print("Privada: ", chaves[1])
   print("Fim\n")
 
 
